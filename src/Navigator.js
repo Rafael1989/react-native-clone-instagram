@@ -14,8 +14,8 @@ const Stack = createStackNavigator();
 function MyStack() {
   return (
     <Stack.Navigator>
-        <Stack.Screen name="Profile" component={Profile} />
         <Stack.Screen name="Auth" component={Login} />
+        <Stack.Screen name="Profile" component={Profile} />
         <Stack.Screen name="Register" component={Register} />
     </Stack.Navigator>
   );
