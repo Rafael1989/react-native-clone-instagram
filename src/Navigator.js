@@ -63,7 +63,10 @@ function mySplash() {
 export default function App() {
   return (
     <NavigationContainer>
-      <BottonNavigator/>
+      <Stack.Navigator headerMode="none">
+        <Stack.Screen name="Splash" component={Splash} />
+        <Stack.Screen name="BottonNavigator" component={BottonNavigator} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }

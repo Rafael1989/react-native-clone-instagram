@@ -5,7 +5,7 @@ import App from '../App'
 export default class Splash extends Component {
     componentDidMount = () => {
         setTimeout(
-            () => {this.props.navigation.navigate('App')},
+            () => {this.props.navigation.navigate('BottonNavigator')},
             2000
         )
     }
