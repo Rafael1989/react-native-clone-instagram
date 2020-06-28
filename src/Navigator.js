@@ -8,6 +8,7 @@ import Profile from './screens/Profile'
 import Login from './screens/Login'
 import { createStackNavigator } from '@react-navigation/stack';
 import Register from './screens/Register'
+import Splash from './screens/Splash';
 
 const Stack = createStackNavigator();
 
@@ -31,7 +32,7 @@ function BottonNavigator() {
             tabBarOptions={{
                 showLabel: false,
             }}
-        >
+        > 
             <Tab.Screen name="Feed" component={Feed} 
             options={{
                 tabBarLabel: 'Feed',
@@ -51,10 +52,18 @@ function BottonNavigator() {
     );
 }
 
+function mySplash() {
+  return (
+    <Stack.Navigator>
+        <Stack.Screen name="Splash" component={Splash} />
+    </Stack.Navigator>
+  );
+}
+
 export default function App() {
   return (
     <NavigationContainer>
-      <BottonNavigator />
+      <BottonNavigator/>
     </NavigationContainer>
   );
 }
